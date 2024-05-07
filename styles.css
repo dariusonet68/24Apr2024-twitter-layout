@@ -4,12 +4,14 @@ body {
   color: #fafafa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
+  margin: 0;
 }
 
 .container {
   max-width: 800px;
+
   margin: auto;
-  height: 100vh;
+  height: 100%;
 }
 /* Helpers */
 .display-flex {
@@ -32,27 +34,41 @@ body {
   display: flex;
   padding: 10px;
 }
+.name {
+  margin: 0;
+}
 .username {
-  color: bada55;
+  color: #bada55;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1.5px;
+  margin: auto 0;
 }
 /* Feed */
 .feed {
   flex: 2;
   overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 0 20px;
 }
 .post {
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
 }
 /* Topics */
 .topics {
   flex: 1;
+  padding-top: 25px;
 }
 .description {
   padding-left: 50px;
 }
 .card {
   border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 10px;
 }
